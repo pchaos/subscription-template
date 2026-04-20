@@ -15,6 +15,12 @@ export default defineGkdApp({
           name: '点击限时京豆福利的领奖按钮',
           matches:
             'TextView[text="点击领奖"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+          exampleUrls: [
+            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_reward_1776671929278.png',
+          ],
+          snapshotUrls: [
+            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_reward_1776671929278.json',
+          ],
         },
       ],
     },
