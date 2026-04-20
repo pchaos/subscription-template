@@ -20,7 +20,7 @@ export default defineGkdApp({
           name: '点击立即领取按钮',
           matches: '[text="立即领取"][clickable=true][visibleToUser=true]',
         },
-       ],
+      ],
     },
     {
       key: 101,
