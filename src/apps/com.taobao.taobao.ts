@@ -6,8 +6,8 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '芭芭农场-领取肥料礼包',
-      desc: '在芭芭农场做任务/施肥页面点击领取按钮。每天7点/12点/20点/22点可领取',
+      name: '芭芭农场 - 领取肥料礼包',
+      desc: '在芭芭农场做任务/施肥页面点击领取按钮。每天 7 点/12 点/20 点/22 点可领取',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       rules: [
         {
@@ -37,6 +37,24 @@ export default defineGkdApp({
           key: 1,
           name: '点击去领取按钮',
           matches: '[text="50.00"][clickable=true][visibleToUser=true]',
+        },
+      ],
+    },
+    {
+      key: 102,
+      name: '红包签到',
+      desc: '在红包签到页面自动点击领取红包',
+      activityIds: ['com.taobao.themis.container.app.TMSActivity'],
+      rules: [
+        {
+          key: 0,
+          name: '点击领取',
+          matches: '[text="点击领取"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 1,
+          name: '继续领钱',
+          matches: '[text="继续领钱"][clickable=true][visibleToUser=true]',
         },
       ],
     },
