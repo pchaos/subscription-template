@@ -38,12 +38,18 @@ export default defineGkdApp({
           name: '点击一键领取',
           matches:
             'TextView[text="一键领取"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+          exampleUrls: [
+            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_mystery_box_1776698872459.png',
+          ],
         },
         {
           key: 1,
           name: '点击立即开盒',
           matches:
             'TextView[text="立即开盒"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+          exampleUrls: [
+            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_mystery_box_2.png',
+          ],
         },
       ],
     },
