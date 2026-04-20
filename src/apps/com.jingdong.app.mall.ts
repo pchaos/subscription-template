@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '种豆得豆 - 限时京豆福利',
+      name: '功能 - 种豆得豆 - 限时京豆福利',
       desc: '在种豆得豆页面自动点击"点击领奖"按钮领取限时京豆福利',
       activityIds: ['com.jd.lib.babel.view.activity.BabelActivity'],
       rules: [
