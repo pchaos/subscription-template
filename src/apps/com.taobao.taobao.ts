@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '芭芭农场 - 领取肥料礼包',
+      name: '功能类 - 芭芭农场 - 领取肥料礼包',
       desc: '在芭芭农场做任务/施肥页面点击领取按钮。每天 7 点/12 点/20 点/22 点可领取',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       rules: [
@@ -24,7 +24,7 @@ export default defineGkdApp({
     },
     {
       key: 101,
-      name: '兔兔礼包',
+      name: '功能类 - 兔兔礼包',
       desc: '在兔兔农场页面点击领取按钮',
       activityIds: ['com.taobao.farm.activity.FarmActivity'],
       rules: [
@@ -42,7 +42,7 @@ export default defineGkdApp({
     },
     {
       key: 102,
-      name: '红包签到',
+      name: '功能类 - 红包签到',
       desc: '在红包签到页面自动点击领取红包',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       rules: [
