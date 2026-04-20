@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main          # 当 main 分支有 push 时自动触发
+    paths:
+      - 'src/**'      # 仅当 src/ 目录下文件有变更时触发
 
 jobs:
   build_release:
