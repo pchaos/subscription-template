@@ -18,9 +18,6 @@ export default defineGkdApp({
           exampleUrls: [
             'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_reward_1776671929278.png',
           ],
-          snapshotUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_reward_1776671929278.json',
-          ],
         },
       ],
     },
