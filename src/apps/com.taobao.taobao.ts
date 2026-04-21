@@ -26,7 +26,10 @@ export default defineGkdApp({
       key: 101,
       name: '功能类 - 兔兔礼包',
       desc: '在兔兔农场页面点击领取按钮',
-      activityIds: ['com.taobao.farm.activity.FarmActivity'],
+      activityIds: [
+        'com.taobao.farm.activity.FarmActivity',
+        'com.taobao.themis.container.app.TMSActivity',
+      ],
       rules: [
         {
           key: 0,
@@ -37,6 +40,11 @@ export default defineGkdApp({
           key: 1,
           name: '点击去领取按钮',
           matches: '[text="50.00"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 2,
+          name: '"点击领取"按钮',
+          matches: '[text="点击领取"][clickable=true][visibleToUser=true]',
         },
       ],
     },
@@ -50,11 +58,6 @@ export default defineGkdApp({
           key: 0,
           name: '点击领取',
           matches: '[text="点击领取"][clickable=true][visibleToUser=true]',
-        },
-        {
-          key: 1,
-          name: '继续领钱',
-          matches: '[text="继续领钱"][clickable=true][visibleToUser=true]',
         },
       ],
     },
