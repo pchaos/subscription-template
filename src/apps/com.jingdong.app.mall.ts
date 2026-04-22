@@ -18,36 +18,24 @@ export default defineGkdApp({
           name: '点击收取好友',
           matches:
             'TextView[text="收取好友"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_shouqu_1776834489966.png',
-          ],
         },
         {
           key: 1,
           name: '点击领取',
           matches:
             'TextView[text="点击领取"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_dianji_1776834489966.png',
-          ],
         },
         {
           key: 2,
           name: '限时 5 日礼包',
           matches:
             'TextView[text="限时 5 日礼包"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_xianri_1776834489966.png',
-          ],
         },
         {
           key: 3,
           name: '点击限时京豆福利的领奖按钮',
           matches:
             'TextView[text="点击领奖"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_babel_reward_1776671929278.png',
-          ],
         },
         {
           key: 4,
@@ -71,18 +59,12 @@ export default defineGkdApp({
           name: '点击一键领取',
           matches:
             'TextView[text="一键领取"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_mystery_box_1776698872459.png',
-          ],
         },
         {
           key: 1,
           name: 'JD PLUS 点击立即开盒',
           matches:
-            'TextView[text*="立即开盒"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_mystery_box_2.png',
-          ],
+            'TextView[text="立即开盒"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
         },
       ],
     },
@@ -100,18 +82,29 @@ export default defineGkdApp({
           name: '点击点我寻宝领取大奖',
           matches:
             'TextView[text="点我寻宝领取大奖"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_ttt_xunbao_1776834742061.png',
-          ],
         },
         {
           key: 1,
           name: '点击宝藏即将出现',
           matches:
             'TextView[text*="宝藏即将出现"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-          exampleUrls: [
-            'https://github.com/pchaos/subscription-template/raw/main/assets/screenshots/jd_ttt_xunbao_1776834742061.png',
-          ],
+        },
+      ],
+    },
+    {
+      key: 103,
+      name: '功能类 - 天天寻宝 - 关闭弹窗',
+      desc: '在天天寻宝页面出现包含"跳转会场找宝藏"文字的弹窗时自动关闭',
+      activityIds: ['com.jd.lib.ttt.page.TTTMultiPageActivity'],
+      actionCd: 5000,
+      matchTime: 30000,
+      actionMaximum: 5,
+      rules: [
+        {
+          key: 0,
+          name: '关闭跳转会场找宝藏弹窗',
+          matches:
+            '[text*="跳转会场找宝藏"][visibleToUser=true] <<n FrameLayout >n [text="×" || text="X" || text="关闭" || desc="×" || desc="X" || desc="关闭"][clickable=true][visibleToUser=true]',
         },
       ],
     },
