@@ -13,12 +13,27 @@ export default defineGkdApp({
         {
           key: 0,
           name: '点击去领取按钮',
-          matches: '[text="去领取"][clickable=true][visibleToUser=true]',
+          matches: '[text*="去领取"][clickable=true][visibleToUser=true]',
         },
         {
           key: 1,
           name: '点击立即领取按钮',
           matches: '[text="立即领取"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 2,
+          name: '芭芭农场WebView交互',
+          matches: '[desc*="芭芭"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 3,
+          name: 'WebView内容区域',
+          matches: '[desc*="farm"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 4,
+          name: '点击去签到按钮',
+          matches: '[text*="去签到"][clickable=true][visibleToUser=true]',
         },
       ],
     },
@@ -39,12 +54,28 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击去领取按钮',
-          matches: '[text="50.00"][clickable=true][visibleToUser=true]',
+          matches: '[text*="50.00"][clickable=true][visibleToUser=true]',
         },
         {
           key: 2,
           name: '"点击领取"按钮',
-          matches: '[text="点击领取"][clickable=true][visibleToUser=true]',
+          matches: '[text*="点击领取"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 3,
+          name: 'WebView内兔兔农场交互',
+          matches: '[desc="兔兔农场"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 4,
+          name: '交互区域点击',
+          matches: '[clickable=true][visibleToUser=true][checkable=false][checked=false]',
+        },
+        {
+          key: 5,
+          name: 'WebView内兔兔领金币交互',
+          // Snapshot-based WebView UI structure indicates Rabbit coin area is exposed via WebView with a descriptive label containing 兔兔领金币
+          matches: '[desc*="兔兔领金币"][clickable=true][visibleToUser=true]',
         },
       ],
     },
@@ -58,6 +89,29 @@ export default defineGkdApp({
           key: 0,
           name: '点击领取',
           matches: '[text="点击领取"][clickable=true][visibleToUser=true]',
+        },
+      ],
+    },
+    {
+      key: 103,
+      name: '功能类 - 淘金币首页签到',
+      desc: '在淘金币首页点击签到领金币按钮',
+      activityIds: ['com.taobao.themis.container.app.TMSActivity'],
+      rules: [
+        {
+          key: 0,
+          name: '点击签到领金币',
+          matches: '[text="签到领金币"] < [clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 1,
+          name: '淘金币WebView交互',
+          matches: '[desc*="淘金币"][clickable=true][visibleToUser=true]',
+        },
+        {
+          key: 2,
+          name: '通用可点击区域',
+          matches: '[clickable=true][visibleToUser=true][checkable=false]',
         },
       ],
     },
