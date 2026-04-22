@@ -116,5 +116,20 @@ export default defineGkdApp({
         },
       ],
     },
+    {
+      key: 104,
+      name: '功能类 - 浏览得奖励滑动任务',
+      desc: '检测屏幕最上方"滑动浏览得肥料"提示，用于自动浏览任务场景',
+      actionDelay: 5000,
+      actionMaximum: 3,
+      activityIds: ['com.taobao.themis.container.app.TMSActivity'],
+      rules: [
+        {
+          key: 0,
+          name: '检测滑动浏览得肥料',
+          matches: '[text="滑动浏览得肥料"][visibleToUser=true]',
+        },
+      ],
+    },
   ],
 });
