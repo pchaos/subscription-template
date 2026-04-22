@@ -64,7 +64,7 @@ export default defineGkdApp({
           key: 1,
           name: 'JD PLUS 点击立即开盒',
           matches:
-            'TextView[text="立即开盒"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+            'TextView[text*="立即开盒"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
         },
       ],
     },
