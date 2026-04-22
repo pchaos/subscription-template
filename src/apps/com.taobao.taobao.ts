@@ -69,7 +69,8 @@ export default defineGkdApp({
         {
           key: 4,
           name: '交互区域点击',
-          matches: '[clickable=true][visibleToUser=true][checkable=false][checked=false]',
+          matches:
+            '[clickable=true][visibleToUser=true][checkable=false][checked=false]',
         },
         {
           key: 5,
