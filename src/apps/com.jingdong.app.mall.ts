@@ -61,12 +61,6 @@ export default defineGkdApp({
           matches:
             'TextView[text="双签奖励"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
         },
-        {
-          key: 8,
-          name: '点击收取好友',
-          matches:
-            'TextView[text="收取好友"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
-        },
       ],
     },
     {
