@@ -37,7 +37,7 @@ export default defineGkdApp({
         },
         {
           key: 5,
-          name: '点击立即领取按钮',
+          name: '点击知道了按钮',
           matches: '[text="知道了"][clickable=true][visibleToUser=true]',
         },
       ],
