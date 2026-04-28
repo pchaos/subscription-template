@@ -17,7 +17,7 @@ export default defineGkdApp({
           key: 0,
           name: '点击收取好友',
           matches:
-            'TextView[text="收取好友"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+            'TextView[text*="收取好友"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
         },
         {
           key: 1,
@@ -29,7 +29,7 @@ export default defineGkdApp({
           key: 2,
           name: '限时 5 日礼包',
           matches:
-            'TextView[text="限时 5 日礼包"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
+            'TextView[text*="日礼包"][clickable=false][visibleToUser=true] < View[clickable=true][visibleToUser=true]',
         },
         {
           key: 3,

@@ -35,16 +35,21 @@ export default defineGkdApp({
           name: '点击去签到按钮',
           matches: '[text*="去签到"][clickable=true][visibleToUser=true]',
         },
+        {
+          key: 5,
+          name: '点击立即领取按钮',
+          matches: '[text="知道了"][clickable=true][visibleToUser=true]',
+        },
       ],
     },
     {
       key: 101,
       name: '功能类 - 兔兔礼包',
       desc: '在兔兔农场页面点击领取按钮',
-      activityIds: [
-        'com.taobao.farm.activity.FarmActivity',
-        'com.taobao.themis.container.app.TMSActivity',
-      ],
+      activityIds: ['com.taobao.themis.container.app.TMSActivity'],
+      actionCd: 10000,
+      matchTime: 60000,
+      actionMaximum: 10,
       rules: [
         {
           key: 0,
@@ -53,8 +58,8 @@ export default defineGkdApp({
         },
         {
           key: 1,
-          name: '点击去领取按钮',
-          matches: '[text*="50.00"][clickable=true][visibleToUser=true]',
+          name: '点击兔兔挖肥料按钮',
+          matches: '[text*="兔兔挖肥料"][clickable=true][visibleToUser=true]',
         },
         {
           key: 2,
