@@ -7,13 +7,19 @@ export default defineGkdApp({
     {
       key: 100,
       name: '功能类 - 芭芭农场 - 领取肥料礼包',
-      desc: '在芭芭农场做任务/施肥页面点击领取按钮。每天 7 点/12 点/20 点/22 点可领取',
+      desc:
+        '在芭芭农场做任务/施肥页面点击领取按钮。每天 7 点/12 点/20 点/22 点可领取。' +
+        '配合全局滑动规则将屏幕外的按钮滑入可视区域后点击。' +
+        '注意：按钮 visibleToUser 在 WebView 内不可靠（报 false 但实际可点），故移除此限制',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
+      actionMaximum: 10,
+      matchTime: 60000,
+      actionDelay: 4000,
       rules: [
         {
           key: 0,
           name: '点击去领取按钮',
-          matches: '[text*="去领取"][clickable=true][visibleToUser=true]',
+          matches: '[text*="去领取"][clickable=true]',
         },
         {
           key: 1,
@@ -33,6 +39,7 @@ export default defineGkdApp({
         {
           key: 4,
           name: '点击去签到按钮',
+          actionDelay: 2000,
           matches: '[text*="去签到"][clickable=true][visibleToUser=true]',
         },
         {
