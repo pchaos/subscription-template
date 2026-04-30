@@ -9,6 +9,7 @@ lerna-debug.log*
 .env
 .vscode
 .eslintcache
+.sisyphus/
 
 .idea
 .DS_Store
