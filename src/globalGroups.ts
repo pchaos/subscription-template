@@ -29,22 +29,10 @@ export default defineGkdGlobalGroups([
           duration: 500,
         },
       } as never,
+
       {
         key: 1,
-        name: '锚点2: 检测列表底部并上滑（去百度极速版）',
-        matches: '[text="去百度极速版领现金(0/1)"][visibleToUser=true]',
-        action: 'swipe' as unknown as undefined,
-        swipeArg: {
-          startX: 540,
-          startY: 2000,
-          endX: 540,
-          endY: 800,
-          duration: 500,
-        },
-      } as never,
-      {
-        key: 2,
-        name: '锚点3: 检测列表底部并上滑（下次一定）',
+        name: '锚点2: 检测列表底部并上滑（下次一定）',
         matches: '[text="下次一定"][visibleToUser=true]',
         action: 'swipe' as unknown as undefined,
         swipeArg: {
@@ -56,8 +44,8 @@ export default defineGkdGlobalGroups([
         },
       } as never,
       {
-        key: 3,
-        name: '锚点4: 检测领肥料礼包文本并上滑',
+        key: 2,
+        name: '锚点3: 检测领肥料礼包文本并上滑',
         matches: '[text="领肥料礼包(0/1)"][visibleToUser=true]',
         action: 'swipe' as unknown as undefined,
         swipeArg: {
