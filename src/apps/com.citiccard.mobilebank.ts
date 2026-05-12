@@ -15,6 +15,11 @@ export default defineGkdApp({
           name: '点击绿色支付卡片',
           matches: '[text="绿色支付"][visibleToUser=true]',
         },
+        {
+          key: 1,
+          name: '点击自主还款',
+          matches: '[text*="动卡空间自主还款"][visibleToUser=true]',
+        },
       ],
     },
   ],
