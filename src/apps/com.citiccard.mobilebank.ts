@@ -18,7 +18,7 @@ export default defineGkdApp({
         {
           key: 1,
           name: '点击自主还款',
-          matches: '[text*="动卡空间自主还款"][visibleToUser=true]',
+          matches: '[text*="动卡空间自助还款"][visibleToUser=true]',
         },
       ],
     },
