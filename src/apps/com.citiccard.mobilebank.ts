@@ -20,6 +20,11 @@ export default defineGkdApp({
           name: '点击自主还款',
           matches: '[text*="动卡空间自助还款"][visibleToUser=true]',
         },
+        {
+          key: 2,
+          name: '点击绿色消费失效卡片',
+          matches: '[text*="绿色消费"][text*="失效"][visibleToUser=true]',
+        },
       ],
     },
   ],
