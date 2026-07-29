@@ -36,7 +36,7 @@ jobs:
           git config --local user.name github-actions[bot]
           git status
           git add -f dist/
-          git commit -m "chore: v${{steps.version.outputs.version}}"
+          git commit -m "chore: v${{steps.version.outputs.version}}" || echo "nothing to commit"
         continue-on-error: true
 
       - name: Git push
@@ -47,8 +47,7 @@ jobs:
           branch: ${{ github.ref }}
           tags: true
 
-      - name: Create Release
-        if: ${{ steps.commit.outcome == 'success' }}
+      - name: Create Release & Upload Assets
         uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{ steps.version.outputs.version }}
@@ -57,3 +56,5 @@ jobs:
           files: |
             ./dist/gkd.json5
             ./dist/gkd.version.json5
+          make_latest: true
+          fail_on_unmatched_files: false
