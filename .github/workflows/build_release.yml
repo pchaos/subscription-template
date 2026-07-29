@@ -1,12 +1,12 @@
 name: build_release
 
 on:
-  workflow_dispatch:  # 保留手动触发
+  workflow_dispatch:
   push:
     branches:
-      - main          # 当 main 分支有 push 时自动触发
+      - main
     paths:
-      - 'src/**'      # 仅当 src/ 目录下文件有变更时触发
+      - 'src/**'
 
 jobs:
   build_release:
@@ -19,8 +19,7 @@ jobs:
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
-
-      - uses: pnpm/action-setup@v4
+          cache: 'pnpm'
 
       - run: pnpm install
 
@@ -50,13 +49,12 @@ jobs:
           tags: true
 
       - name: Create Release & Upload Assets
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ steps.version.outputs.version }}
-          name: Release ${{ steps.version.outputs.version }}
-          body_path: ./dist/CHANGELOG.md
-          files: |
-            ./dist/gkd.json5
-            ./dist/gkd.version.json5
-          make_latest: true
-          fail_on_unmatched_files: false
+        run: |
+          gh release create "v${{ steps.version.outputs.version }}" \
+            --title "Release ${{ steps.version.outputs.version }}" \
+            --notes-file ./dist/CHANGELOG.md \
+            --latest \
+            --verify-tag \
+            --generate-notes \
+            ./dist/gkd.json5 \
+            ./dist/gkd.version.json5 || true
