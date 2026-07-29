@@ -6,7 +6,7 @@ import globalGroups from './globalGroups';
 export default defineGkdSubscription({
   id: 1688888888,
   name: 'gkd Subscription patch',
-  version: 1,
+  version: 23,
   author: 'p19992003',
   checkUpdateUrl:
     'https://raw.githubusercontent.com/pchaos/subscription-template/main/dist/gkd.version.json5',
