@@ -8,7 +8,8 @@ export default defineGkdSubscription({
   name: 'gkd Subscription patch',
   version: 1,
   author: 'p19992003',
-  checkUpdateUrl: 'https://raw.githubusercontent.com/pchaos/subscription-template/main/dist/gkd.version.json5',
+  checkUpdateUrl:
+    'https://raw.githubusercontent.com/pchaos/subscription-template/main/dist/gkd.version.json5',
   supportUri: 'https://github.com/pchaos/subscription-template',
   categories,
   globalGroups,
