@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '功能类 - 芭芭农场 - 领取肥料礼包',
+      name: '功能类-芭芭农场-领取肥料礼包',
       desc:
         '在芭芭农场做任务/施肥页面点击领取按钮。每天 7 点/12 点/20 点/22 点可领取。' +
         '配合全局滑动规则将屏幕外的按钮滑入可视区域后点击。' +
@@ -51,7 +51,7 @@ export default defineGkdApp({
     },
     {
       key: 101,
-      name: '功能类 - 兔兔礼包',
+      name: '功能类-兔兔礼包',
       desc: '在兔兔农场页面点击领取按钮',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       actionCd: 10000,
@@ -94,7 +94,7 @@ export default defineGkdApp({
     },
     {
       key: 102,
-      name: '功能类 - 红包签到',
+      name: '功能类-红包签到',
       desc: '在红包签到页面自动点击领取红包',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       rules: [
@@ -107,7 +107,7 @@ export default defineGkdApp({
     },
     {
       key: 103,
-      name: '功能类 - 淘金币首页签到',
+      name: '功能类-淘金币首页签到',
       desc: '在淘金币首页点击签到领金币按钮',
       activityIds: ['com.taobao.themis.container.app.TMSActivity'],
       rules: [
@@ -130,7 +130,7 @@ export default defineGkdApp({
     },
     {
       key: 104,
-      name: '功能类 - 浏览得奖励滑动任务',
+      name: '功能类-浏览得奖励滑动任务',
       desc: '检测屏幕"滑动浏览得肥料"提示并上滑，将屏幕外的按钮滑入可视区域',
       actionMaximum: 8,
       matchTime: 120000,

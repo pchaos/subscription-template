@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '功能类 - 种豆得豆 - 自动领取',
+      name: '功能类-种豆得豆-自动领取',
       desc: '在种豆得豆页面自动点击"收取好友"、"点击领取"、"限时 5 日礼包"按钮',
       activityIds: ['com.jd.lib.babel.view.activity.BabelActivity'],
       actionCd: 10000,
@@ -65,7 +65,7 @@ export default defineGkdApp({
     },
     {
       key: 101,
-      name: '功能类 - 签到开盲盒',
+      name: '功能类-签到开盲盒',
       desc: '在签到开盲盒页面自动点击"一键领取"和"立即开盒"按钮',
       activityIds: ['com.jd.lib.web.activity.WebActivity'],
       actionCd: 10000,
@@ -88,7 +88,7 @@ export default defineGkdApp({
     },
     {
       key: 102,
-      name: '功能类 - 天天寻宝 - 自动点击',
+      name: '功能类-天天寻宝-自动点击',
       desc: '在天天寻宝页面自动点击"点我寻宝领取大奖"按钮',
       activityIds: ['com.jd.lib.ttt.page.TTTMultiPageActivity'],
       actionCd: 10000,
@@ -111,7 +111,7 @@ export default defineGkdApp({
     },
     {
       key: 103,
-      name: '功能类 - 天天寻宝 - 关闭弹窗',
+      name: '功能类-天天寻宝-关闭弹窗',
       desc: '在天天寻宝页面出现包含"跳转会场找宝藏"文字的弹窗时自动关闭',
       activityIds: ['com.jd.lib.ttt.page.TTTMultiPageActivity'],
       actionCd: 5000,

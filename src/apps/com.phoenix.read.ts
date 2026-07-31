@@ -5,8 +5,8 @@ export default defineGkdApp({
   name: '红果免费短剧',
   groups: [
     {
-      key: 1,
-      name: '功能类 - 上滑继续观看短剧',
+      key: 101,
+      name: '功能类-上滑继续观看短剧',
       desc: '上滑继续观看短剧',
       fastQuery: true,
       matchTime: 10000,

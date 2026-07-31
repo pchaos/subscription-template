@@ -6,7 +6,7 @@ export default defineGkdApp({
   groups: [
     {
       key: 100,
-      name: '功能类 - XRiverActivity - 滑动浏览得肥料',
+      name: '功能类-XRiverActivity-滑动浏览得肥料',
       desc:
         '在 XRiverActivity 页面检测到"滑动浏览"提示后，自动向上滑动 3 次（每次间隔 5 秒）以完成浏览任务。' +
         'WebView 内 visibleToUser 不可靠，故使用 matchRoot 从根节点匹配 + forcedTime 强制查询。',

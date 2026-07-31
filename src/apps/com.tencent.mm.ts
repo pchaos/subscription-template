@@ -5,8 +5,8 @@ export default defineGkdApp({
   name: '微信',
   groups: [
     {
-      key: 1,
-      name: '功能类 - 视频广告完成后关闭',
+      key: 101,
+      name: '功能类-视频广告完成后关闭',
       desc: '微信朋友圈视频广告播放完成后自动关闭',
       fastQuery: true,
       matchTime: 40000, // 40 秒：等待 30 秒广告播放 + 10 秒缓冲
@@ -26,8 +26,8 @@ export default defineGkdApp({
       ],
     },
     {
-      key: 2,
-      name: '功能类 - 视频广告播放中静音',
+      key: 102,
+      name: '功能类-视频广告播放中静音',
       desc: '微信朋友圈视频广告播放时自动静音',
       fastQuery: true,
       matchTime: 5000, // 5 秒：只在广告刚开始时触发一次
