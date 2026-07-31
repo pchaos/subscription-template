@@ -58,6 +58,20 @@ pnpm install --registry=https://registry.npmmirror.com
 
 现在您可编辑 [./src](./src/) 下的文件来自定义您的订阅, 构建后的订阅文件处于 [./dist](./dist/) 目录下
 
+## 本地调试服务
+
+`scripts/serve.py` 用于本地预览构建后的订阅文件, 自动注册 `.json5` 的 MIME 类型, GKD 客户端可直接通过 HTTP 加载
+
+```shell
+# 默认 8080 端口
+python3 scripts/serve.py
+
+# 指定端口
+python3 scripts/serve.py 9000
+```
+
+启动后访问 `http://localhost:8080/gkd.json5` 即可在 GKD 中添加本地订阅进行调试
+
 另外您必须修改 订阅详情 [./src/subscription.ts](./src/subscription.ts) 下的 id 字段, 否则可能会和其它订阅冲突, 填一个较大的随机数字即可
 
 可以在 github 查找下方代码块 ([快捷链接](https://github.com/search?q=export+default+defineGkdSubscription%28%7B+++id%3A+&type=code)), 查看您的订阅id是否跟已有项目重复
